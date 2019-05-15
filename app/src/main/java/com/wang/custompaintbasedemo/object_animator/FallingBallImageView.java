@@ -17,9 +17,9 @@ import com.wang.custompaintbasedemo.R;
  * TODO: document your custom view class.
  */
 public class FallingBallImageView extends ImageView {
-    private String mExampleString; // TODO: use a default from R.string...
-    private int mExampleColor = Color.RED; // TODO: use a default from R.color...
-    private float mExampleDimension = 0; // TODO: use a default from R.dimen...
+    private String mExampleString;
+    private int mExampleColor = Color.RED;
+    private float mExampleDimension = 0;
     private Drawable mExampleDrawable;
 
     private TextPaint mTextPaint;
