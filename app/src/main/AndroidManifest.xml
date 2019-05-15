@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wang.custompaintbasedemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CameraStretchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".object_animator.ObjectAnimatorActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".animator_set.MenuChooseActivity" />
+        <activity android:name=".property_advance_anim.keyframe.propertyvaluesholder.PropertyAnimAdvanceActivity" />
+        <activity android:name=".property_advance_anim.keyframe.propertyvaluesholder.KeyFrameActivity" />
+        <activity android:name=".viewgroup_animator.ViewGroupAnimActivity" />
+        <activity android:name=".path__measure.PathMeasureActivity" />
+        <activity android:name=".path__measure.SVGActivity" />
+        <activity android:name=".painting_base.PaintBaseActivity" />
+        <activity android:name=".mix_mode.XfermodeActivity" />
+        <activity android:name=".canvas_base.CanvasActivity" />
+        <activity android:name=".bitmap.BitmapActivity" />
+        <activity android:name=".bitmap.TelescopeActivity" />
+        <activity android:name=".bitmap.BitmapFactoryActivity" />
+        <activity android:name=".bitmap.BitmapCreateActivity" />
+        <activity android:name=".bitmap.surface.SurfaceActivity" />
+        <activity android:name=".gesture_detect.GestureDetectActivity" />
+        <activity android:name=".gesture_detect.RocketActivity" />
+        <activity
+            android:name=".custom_style.CustomStyleActivity"
+            android:windowSoftInputMode="stateUnspecified|stateUnchanged|stateHidden" />
+        <activity android:name=".matrix_11.MatrixActivity" />
+        <activity android:name=".custom_style.FlowActivity"></activity>
+    </application>
+
+</manifest>

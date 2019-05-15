@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wang.custompaintbasedemo.object_animator.ObjectAnimatorActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/startAnim"
+                    android:text="启动动画"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/endAnim"
+                    android:text="结束动画"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAnim"
+                android:padding="12dip"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="看这里"
+                android:textColor="#ffffff"
+                android:background="#9898ff"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginBottom="24dip"
+                android:layout_marginTop="50dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.wang.custompaintbasedemo.object_animator.FallingBallImageView
+                android:id="@+id/fallingBall"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/scan_circle"
+                android:layout_marginBottom="24dip"
+                android:layout_width="50dip"
+                android:layout_height="50dip" />
+
+            <com.wang.custompaintbasedemo.object_animator.CustomScaleTextView
+                android:id="@+id/tvCustom"
+                android:text="自定义字体"
+                android:padding="10dip"
+                android:textColor="#ffffff"
+                android:background="#ff00ff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

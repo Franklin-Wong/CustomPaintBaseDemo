@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wang.custompaintbasedemo.bitmap.BitmapCreateActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffff">
+
+
+    <com.wang.custompaintbasedemo.bitmap.LinearGradientView
+        android:layout_width="match_parent"
+        android:layout_height="160dip" />
+    <ImageView
+        android:id="@+id/imageCut"
+        android:scaleType="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imageCut2"
+        android:scaleType="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.wang.custompaintbasedemo.bitmap.StrokeImageView
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_gravity="center"
+        android:src="@mipmap/city"
+        android:scaleType="fitCenter"
+        android:padding="6dip"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <com.wang.custompaintbasedemo.bitmap.PaintAliasView
+        android:background="#99ff11"
+        android:layout_width="match_parent"
+        android:layout_height="100dip" />
+    <com.wang.custompaintbasedemo.bitmap.PaintAliasUpdateView
+        android:background="#99ffaa"
+        android:layout_width="match_parent"
+        android:layout_height="100dip" />
+</LinearLayout>
+</ScrollView>

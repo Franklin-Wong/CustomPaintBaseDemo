@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/svg_view"
+    tools:targetApi="lollipop">
+    <target
+        android:animation="@anim/anim_trim_start"
+        android:name="bar"/>
+    
+</animated-vector>

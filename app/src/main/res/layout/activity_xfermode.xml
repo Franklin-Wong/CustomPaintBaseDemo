@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wang.custompaintbasedemo.mix_mode.XfermodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.wang.custompaintbasedemo.mix_mode.PorterDuffXfermodeView
+            android:layout_width="180dip"
+            android:layout_height="180dip"
+            android:layout_gravity="center" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dip"
+                android:text="刮出来了" />
+
+            <com.wang.custompaintbasedemo.mix_mode.EraserView_SRCOUT
+                android:layout_width="match_parent"
+                android:layout_height="100dip" />
+        </FrameLayout>
+        <com.wang.custompaintbasedemo.mix_mode.InvertedImageView_SRCIN
+            android:layout_width="match_parent"
+            android:layout_height="280dip"
+            android:layout_marginBottom="24dip"
+            android:background="#c9c9c9" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wang.custompaintbasedemo.path__measure.PathMeasureActivity">
+
+    <com.wang.custompaintbasedemo.path__measure.PathView
+        android:id="@+id/pathView"
+        android:background="#887787"
+        android:layout_width="match_parent"
+        android:layout_height="100dip" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.wang.custompaintbasedemo.path__measure.RectPathView
+            android:id="@+id/rectPathView"
+            android:layout_width="100dip"
+            android:layout_height="100dip" />
+        <com.wang.custompaintbasedemo.path__measure.GetSegmentView
+            android:layout_width="100dip"
+            android:layout_height="100dip" />
+
+        <com.wang.custompaintbasedemo.path__measure.GetPosTanVIew
+            android:layout_width="150dip"
+            android:layout_height="100dip" />
+
+    </LinearLayout>
+    <com.wang.custompaintbasedemo.path__measure.AlipayView
+        android:layout_width="match_parent"
+        android:layout_height="200dip" />
+</LinearLayout>

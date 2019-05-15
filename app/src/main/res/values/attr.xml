@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyTextView">
+        <attr name="header" format="reference"/>
+        <attr name="headerHeight" format="dimension"/>
+        <attr name="headerVisibleHeight" format="dimension"/>
+        <attr name="age">
+            <flag name="child" value="10"/>
+            <flag name="young" value="18"/>
+            <flag name="old" value="60"/>
+        </attr>
+        <attr name="border_color" format="color|reference"/>
+
+        <attr name="backGround" format="reference|color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="focusable" format="boolean"/>
+        <attr name="layout_width" format="dimension"/>
+        <attr name="formAlpha" format="float"/>
+        <attr name="toAlpha" format="float"/>
+
+        <attr name="visible" format="integer"/>
+        <attr name="frameDuration" format="integer"/>
+
+        <attr name="apiKey" format="string"/>
+
+        <attr name="pivotX" format="fraction"/>
+        <attr name="pivotY" format="fraction"/>
+
+        <attr name="orientationItem">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+
+        </attr>
+
+        <!--位 或者 运算-->
+        <attr name="windowSoftInputMode">
+            <flag name="stateUnspecified" value="0"/>
+            <flag name="stateUnchanged" value="1"/>
+            <flag name="stateHidden" value="2"/>
+            <flag name="stateAlwaysHidden" value="3"/>
+            <flag name="stateVisible" value="4"/>
+            <flag name="stateAlwaysVisible" value="5"/>
+            <flag name="adjustUnspecified" value="0x00"/>
+            <flag name="adjustResize" value="0x01"/>
+            <flag name="adjustPan" value="0x20"/>
+            <flag name="adjustNothing" value="0x30"/>
+
+        </attr>
+
+
+    </declare-styleable>
+</resources>

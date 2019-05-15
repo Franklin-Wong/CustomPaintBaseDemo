@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wang.custompaintbasedemo.bitmap.BitmapActivity">
+
+
+    <TextView
+        android:id="@+id/addShapeCorner"
+        android:text="添加圆角"
+        android:gravity="center"
+        android:padding="12dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginLeft="12dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvShape"
+        android:text="Shape标签"
+        android:padding="10dip"
+        android:layout_margin="20dip"
+        android:background="@drawable/bitmap_shape_solid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.wang.custompaintbasedemo.bitmap.ShapeView
+        android:layout_width="250px"
+        android:layout_height="150px"
+        android:layout_margin="100px"
+        android:background="#ff00aa"/>
+
+    <com.wang.custompaintbasedemo.bitmap.RegionShapeView
+        android:layout_width="match_parent"
+        android:layout_height="90dip" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.wang.custompaintbasedemo.bitmap.ShapeShaderView
+            android:background="#ffaaff"
+            android:layout_width="150dip"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/image"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="150dip" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
